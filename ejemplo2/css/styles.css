@@ -1,0 +1,9 @@
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+}
+
+.cuadrado.oculto {
+    display: none;
+}

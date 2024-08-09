@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio Inicial</title>
+    </head>
+    <body>
+        <div id="cuerpo">
+        </div>
+        <button onclick="agregarParrafo()">Agregar Parrafo</button>
+    </body>
+</html>
+
+<script>
+
+function agregarParrafo(){
+  let cuerpo = document.getElementById("cuerpo");
+  let element = document.createElement("p");
+  element.innerHTML = "Parrafo Prueba";
+  element.style.color = "blue";
+  cuerpo.appendChild(element);
+}
+</script>

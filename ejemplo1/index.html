@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Ejercicio I</title>
+    </head>
+    <body>
+        <div>
+            <h1>Bienvenido <span id="nombre-placeholder">anónimo</span></h1>
+            <div>
+                Ingrese nombre:
+                <input id="nombre-input">
+                <button onclick="actualizarConNombre()">OK</button>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+
+function actualizarConNombre() {
+	let nombre = document.getElementById("nombre-input").value;
+	let nombreElement = document.getElementById("nombre-placeholder");
+	nombreElement.innerHTML = nombre;
+}
+
+</script>
